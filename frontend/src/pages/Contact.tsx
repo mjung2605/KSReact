@@ -1,3 +1,8 @@
+import { Background } from "../components"
+
 export const Contact = () => {
-    return <></>
+
+    return <section>
+        <Background />
+    </section>
 }
