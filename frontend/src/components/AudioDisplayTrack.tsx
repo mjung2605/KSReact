@@ -15,7 +15,7 @@ export const AudioDisplayTrack: React.FC<AudioDisplayTrackProps> = ( {audio, aud
 
     };
 
-    return <div>
+    return <div className="p-4">
         <audio src={audio.src} ref={audioRef} onLoadedMetadata={onLoadedMetadata}></audio>
         <p>{audio.title}</p>
     </div>

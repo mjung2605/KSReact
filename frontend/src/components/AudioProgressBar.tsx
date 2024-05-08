@@ -47,7 +47,7 @@ export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef,
         return '00:00';
       };
 
-    return <div className="progress-bar">
+    return <div className="p-4">
         <span className="time current">{formatTime(timeProgress)}</span>
         <input type="range" ref={progressRef} defaultValue="0" onChange={handleProgressChange} max={duration} style={progressStyle}/>
         <span className="time">{formatTime(duration)}</span>
