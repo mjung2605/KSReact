@@ -1,8 +1,8 @@
-import "@/styles/App.css"
 
-import { DisplayTrackProps } from "../types";
 
-export const DisplayTrack: React.FC<DisplayTrackProps> = ( {audio, audioRef, progressRef, setDuration} ) => {
+import { AudioDisplayTrackProps } from "../types";
+
+export const AudioDisplayTrack: React.FC<AudioDisplayTrackProps> = ( {audio, audioRef, progressRef, setDuration} ) => {
 
     const onLoadedMetadata = () => {
 
@@ -22,4 +22,4 @@ export const DisplayTrack: React.FC<DisplayTrackProps> = ( {audio, audioRef, pro
     
 };
 
-export default DisplayTrack; 
+export default AudioDisplayTrack; 

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa6";
-import { ControlsProps } from "../types";
+import { AudioControlsProps } from "../types";
 
-export const Controls: React.FC<ControlsProps> = ( {audioRef} ) => {
+export const AudioControls: React.FC<AudioControlsProps> = ( {audioRef} ) => {
 
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -34,4 +34,4 @@ export const Controls: React.FC<ControlsProps> = ( {audioRef} ) => {
     </div>
 };
 
-export default Controls;
+export default AudioControls;

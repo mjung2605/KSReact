@@ -18,7 +18,7 @@ export interface Audio {
     src: string
 }
 
-export interface DisplayTrackProps {
+export interface AudioDisplayTrackProps {
     audio: Audio
     audioRef: MutableRefObject<HTMLAudioElement | null>
     progressRef: MutableRefObject<HTMLInputElement | null>
@@ -29,11 +29,11 @@ export interface AudioPlayerProps {
     audio: Audio
 }
 
-export interface ControlsProps {
+export interface AudioControlsProps {
     audioRef: MutableRefObject<HTMLAudioElement | null>
 }
 
-export interface ProgressBarProps {
+export interface AudioProgressBarProps {
     progressRef: MutableRefObject<HTMLInputElement | null>
     audioRef: MutableRefObject<HTMLAudioElement | null>
     timeProgress: number

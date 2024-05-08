@@ -1,9 +1,8 @@
-import "@/styles/ProgressBar.css"
-import "@/styles/App.css"
-import { useEffect, useState } from "react";
-import { ProgressBarProps, CustomCSSProperties } from "../types";
 
-export const ProgressBar: React.FC<ProgressBarProps> = ( {progressRef, audioRef, timeProgress, setTimeProgress, duration, setDuration} ) => {
+import { useEffect, useState } from "react";
+import { AudioProgressBarProps, CustomCSSProperties } from "../types";
+
+export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef, audioRef, timeProgress, setTimeProgress, duration, setDuration} ) => {
 
 
     const [progressStyle, setProgressStyle] = useState<CustomCSSProperties>({ '--range-progress': '0%' });
@@ -55,4 +54,4 @@ export const ProgressBar: React.FC<ProgressBarProps> = ( {progressRef, audioRef,
     </div>
 };
 
-export default ProgressBar;
+export default AudioProgressBar;
