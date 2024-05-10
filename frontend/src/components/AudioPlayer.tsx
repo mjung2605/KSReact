@@ -23,4 +23,3 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ( {audio} ) => {
     </div>
 }
 
-export default AudioPlayer;

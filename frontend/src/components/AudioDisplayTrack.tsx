@@ -22,4 +22,3 @@ export const AudioDisplayTrack: React.FC<AudioDisplayTrackProps> = ( {audio, aud
     
 };
 
-export default AudioDisplayTrack; 

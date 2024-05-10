@@ -34,4 +34,3 @@ export const AudioControls: React.FC<AudioControlsProps> = ( {audioRef} ) => {
     </div>
 };
 
-export default AudioControls;
