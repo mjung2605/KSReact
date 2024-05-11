@@ -1,13 +1,13 @@
-import { Footer } from "./components"
-import { Contact, Projects } from "./pages"
+import { Contact, Projects, Start } from "./pages"
 
 const App = () => {
 
   return (
     <>
+      <Start />
       <Projects />
       <Contact />
-      <Footer />
+      
     </>
   )
 }
