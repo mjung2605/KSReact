@@ -1,5 +1,5 @@
 import { Heading } from "."
-import { BlurryBackgroundProps } from "../types"
+import { BlurryBackgroundProps } from "@/types"
 
 export const BlurryBackground: React.FC<BlurryBackgroundProps> = ( {title, content} ) => {
 

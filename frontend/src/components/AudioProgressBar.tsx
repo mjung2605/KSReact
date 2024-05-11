@@ -1,12 +1,12 @@
 import "../index.css"
 import { useEffect, useState } from "react";
-import { AudioProgressBarProps, CustomCSSProperties } from "../types";
+import { AudioProgressBarProps, CustomCSSProperties } from "@/types";
 import { AudioTime } from "./AudioTime";
 
 export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef, audioRef, timeProgress, setTimeProgress, duration, setDuration} ) => {
 
 
-    const [progressStyle, setProgressStyle] = useState<CustomCSSProperties>({ '--range-progress': '0%' });
+    const [progressStyle] = useState<CustomCSSProperties>({ '--range-progress': '0%' });
 
     useEffect(() => {
         const updateTimeProgress = () => {

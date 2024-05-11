@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 
-import { AudioPlayerProps } from "../types"
+import { AudioPlayerProps } from "@/types"
 import { AudioDisplayTrack, AudioControls, AudioProgressBar } from "."
 
 

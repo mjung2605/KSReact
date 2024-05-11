@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa6";
-import { AudioControlsProps } from "../types";
+import { AudioControlsProps } from "@/types";
 
 export const AudioControls: React.FC<AudioControlsProps> = ( {audioRef} ) => {
 

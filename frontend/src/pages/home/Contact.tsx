@@ -1,4 +1,4 @@
-import { BlurryBackground, ContactForm } from "../../components"
+import { BlurryBackground, ContactForm } from "@/components"
 
 export const Contact = () => {
 
