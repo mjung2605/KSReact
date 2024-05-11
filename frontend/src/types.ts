@@ -7,11 +7,13 @@ import { Dispatch, MutableRefObject, SetStateAction } from "react"
 export interface HeadingProps {
     title: string
     isTextWhite: boolean
+    isPageTitle: boolean
 }
 
 export interface BlurryBackgroundProps {
     title: string;
     content: ReactNode;
+    isPageTitle: boolean
 }
 
 

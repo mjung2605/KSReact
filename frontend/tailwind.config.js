@@ -17,6 +17,9 @@ export default withMT( {
       maxWidth: {
         '160': '640px', 
       },
+      padding: {
+        '160': '640px',
+      }
 
     },
 
