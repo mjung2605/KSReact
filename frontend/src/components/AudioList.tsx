@@ -9,7 +9,6 @@ export const AudioList = () => {
       <AudioPlayer audio={audios[0]} isMobile={false} />
       <AudioPlayer audio={audios[1]} isMobile={false} />
       <AudioPlayer audio={audios[2]} isMobile={false} />
-    
     </div>
   )
 }
