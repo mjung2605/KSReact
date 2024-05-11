@@ -19,3 +19,74 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+// Progress Bar Slider Styling
+@layer utilities {
+    .range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--black);
+      cursor: pointer;
+      position: relative;
+    }
+  
+    .range-slider::-webkit-slider-thumb:active {
+      transform: scale(1.2);
+    }
+  
+    .range-slider::-moz-range-thumb {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: var(--black);
+      cursor: pointer;
+      border: transparent;
+      position: relative;
+    }
+  
+    .range-slider:active::-moz-range-thumb {
+      transform: scale(1.2);
+    }
+  }
+  
+@layer components {
+    .range-slider {
+      --range-progress: 0%;
+      position: relative;
+      background: var(--lightest-grey);
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  
+    .range-slider::-moz-range-track {
+      background: var(--lightest-grey);
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  
+    .range-slider::before {
+      content: '';
+      height: 2px;
+      background: var(--black);
+      width: calc(var(--range-progress));
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    .range-slider::-moz-range-progress {
+      background: var(--black);
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      height: 2px;
+    }
+}

@@ -8,8 +8,13 @@ export default {
         'contact-image': "url('/src/assets/img/kathi_sideview.jpg')",
       },
       colors: {
-        'ksPink': '#fff3f3' 
-      }
+        'ksPink': '#fff3f3',
+        'ksBlack': '#171717',
+        'ksWhite': '#ffffff',
+      },
+      maxWidth: {
+        '160': '640px', 
+      },
 
     },
 

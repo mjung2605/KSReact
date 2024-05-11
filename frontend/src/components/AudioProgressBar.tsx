@@ -1,4 +1,4 @@
-
+import "../index.css"
 import { useEffect, useState } from "react";
 import { AudioProgressBarProps, CustomCSSProperties } from "../types";
 
@@ -49,10 +49,11 @@ export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef,
 
 
       /** TODO(): style progress bar */
-    return <div className="p-4">
-        <span className="time current">{formatTime(timeProgress)}</span>
-        <input type="range" ref={progressRef} defaultValue="0" onChange={handleProgressChange} max={duration} style={progressStyle}/>
-        <span className="time">{formatTime(duration)}</span>
+    return <div className="py-4 grid grid-cols-2 gap-2">
+        
+        <input className="range-slider col-span-2" type="range" ref={progressRef} defaultValue="0" onChange={handleProgressChange} max={duration} style={progressStyle}/>
+        <span className="text-left text-xs">{formatTime(timeProgress)}</span>
+        <span className="text-right text-xs">{formatTime(duration)}</span>
     </div>
 };
 

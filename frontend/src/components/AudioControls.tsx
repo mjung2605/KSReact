@@ -23,14 +23,14 @@ export const AudioControls: React.FC<AudioControlsProps> = ( {audioRef} ) => {
     }, [isPlaying, audioRef]); /* useEffect will be triggered each time isPlaying or audioRef changes */
 
     return <div className="p-4">
-        <div className="">
-            <button onClick={togglePlayPause}>
+    
+        <button onClick={togglePlayPause}>
                 { 
                     /* changes Icon depending on Play State */
                     isPlaying ? <FaPause size={40} /> : <FaPlay size={40} />
                 }
-            </button>
-        </div>
+        </button>
+        
     </div>
 };
 
