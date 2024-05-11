@@ -1,5 +1,9 @@
 import { ReactNode } from "react";
 
+import { Dispatch, MutableRefObject, SetStateAction } from "react"
+
+
+
 export interface HeadingProps {
     title: string
     isTextWhite: boolean
@@ -10,7 +14,6 @@ export interface BlurryBackgroundProps {
     content: ReactNode;
 }
 
-import { Dispatch, MutableRefObject, SetStateAction } from "react"
 
 
 export interface Audio {
@@ -43,5 +46,10 @@ export interface AudioProgressBarProps {
 }
 
 export type CustomCSSProperties = {
-    [key: string]: string | number;
-};
+    [key: string]: string | number
+}
+
+export interface AudioTimeProps {
+    time: number
+    isTextAlignLeft: boolean
+}

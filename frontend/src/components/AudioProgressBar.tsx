@@ -1,6 +1,7 @@
 import "../index.css"
 import { useEffect, useState } from "react";
 import { AudioProgressBarProps, CustomCSSProperties } from "../types";
+import { AudioTime } from "./AudioTime";
 
 export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef, audioRef, timeProgress, setTimeProgress, duration, setDuration} ) => {
 
@@ -34,26 +35,17 @@ export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef,
         }
     };
 
-    const formatTime = (time: number) => {
-        if (time && !isNaN(time)) {
-          const minutes = Math.floor(time / 60);
-          const formatMinutes =
-            minutes < 10 ? `0${minutes}` : `${minutes}`;
-          const seconds = Math.floor(time % 60);
-          const formatSeconds =
-            seconds < 10 ? `0${seconds}` : `${seconds}`;
-          return `${formatMinutes}:${formatSeconds}`;
-        }
-        return '00:00';
-      };
+    
 
 
       /** TODO(): style progress bar */
-    return <div className="py-4 grid grid-cols-2 gap-2">
+    return <div className="py-4 grid grid-cols-2 gap-2 justify-self-center">
         
         <input className="range-slider col-span-2" type="range" ref={progressRef} defaultValue="0" onChange={handleProgressChange} max={duration} style={progressStyle}/>
-        <span className="text-left text-xs">{formatTime(timeProgress)}</span>
-        <span className="text-right text-xs">{formatTime(duration)}</span>
+      
+        <AudioTime time={timeProgress} isTextAlignLeft={true} />
+        <AudioTime time={duration} isTextAlignLeft={false} />
+        
     </div>
 };
 

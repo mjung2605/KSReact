@@ -1,6 +1,4 @@
-import { Audios, Heading } from "../../components"
-import { AudioCarousel } from "../../components/AudioCarousel"
-import { YoutubeEmbed } from "../../components/YouTubeEmbed"
+import { Audios, Heading, AudioCarousel, YoutubeEmbed } from "../../components"
  
 export const Projects = () => {
 

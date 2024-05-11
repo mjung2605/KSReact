@@ -16,7 +16,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ( {audio} ) => {
     
     console.log(audioRef);
 
-    return <div className="bg-ksWhite drop-shadow-md pb-3 pt-4 px-6 flex flex-col content-evenly">
+    return <div className="bg-ksWhite drop-shadow-md pb-3 pt-4 mx-20 px-4 flex flex-col content-evenly">
         <AudioDisplayTrack audio={audio} audioRef={audioRef} setDuration={setDuration} progressRef={progressRef} />
         <AudioControls audioRef={audioRef} />
         <AudioProgressBar progressRef={progressRef} audioRef={audioRef} timeProgress={timeProgress} duration={duration} setTimeProgress={setTimeProgress} setDuration={setDuration} />
