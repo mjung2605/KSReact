@@ -30,6 +30,7 @@ export interface AudioDisplayTrackProps {
 
 export interface AudioPlayerProps {
     audio: Audio
+    isMobile: boolean
 }
 
 export interface AudioControlsProps {

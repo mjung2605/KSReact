@@ -1,4 +1,4 @@
-import { AudioTimeProps } from "../types";
+import { AudioTimeProps } from "@/types";
 
 
 export const AudioTime: React.FC<AudioTimeProps> = ({ time, isTextAlignLeft }) => {

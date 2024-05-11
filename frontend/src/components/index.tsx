@@ -5,6 +5,6 @@ export * from "./Footer";
 export * from "./AudioControls";
 export * from "./AudioDisplayTrack";
 export * from "./AudioProgressBar";
-export * from "./Audios";
+export * from "./AudioList";
 export * from "./AudioCarousel";
 export * from "./YouTubeEmbed";

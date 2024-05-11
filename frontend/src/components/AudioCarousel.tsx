@@ -1,8 +1,9 @@
 import { Carousel, IconButton } from '@material-tailwind/react';
-import { audios } from '../assets/audio/audio';
+import { audios } from '@/assets/audio/audio';
 import { AudioPlayer } from './AudioPlayer';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
+// Mobile Audio Component
 export const AudioCarousel = () => {
 
     return <div className='flex flex-row h-full justify-center'>
@@ -44,9 +45,9 @@ export const AudioCarousel = () => {
         
         placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} loop={true} >
 
-            <AudioPlayer audio={audios[0]} />
-            <AudioPlayer audio={audios[1]} />
-            <AudioPlayer audio={audios[2]} />
+            <AudioPlayer audio={audios[0]} isMobile={true} />
+            <AudioPlayer audio={audios[1]} isMobile={true} />
+            <AudioPlayer audio={audios[2]} isMobile={true} />
 
         </Carousel>
         

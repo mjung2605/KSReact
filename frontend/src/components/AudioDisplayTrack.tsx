@@ -1,6 +1,6 @@
 
 
-import { AudioDisplayTrackProps } from "../types";
+import { AudioDisplayTrackProps } from "@/types";
 
 export const AudioDisplayTrack: React.FC<AudioDisplayTrackProps> = ( {audio, audioRef, progressRef, setDuration} ) => {
 
