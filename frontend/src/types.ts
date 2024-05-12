@@ -11,9 +11,9 @@ export interface HeadingProps {
 }
 
 export interface BlurryBackgroundProps {
-    title: string;
-    content: ReactNode;
+    title: string
     isPageTitle: boolean
+    content: ReactNode
 }
 
 

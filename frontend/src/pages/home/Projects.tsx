@@ -21,7 +21,7 @@ export const Projects = () => {
 
 
     return <section style={{scrollSnapAlign: "start"}} className="overflow-x-hidden flex flex-col bg-cover bg-ksPink h-screen">
-        <Heading title={"Hörproben"} isTextWhite={false} />
+        <Heading title={"Hörproben"} isTextWhite={false} isPageTitle={false} />
         
         {isMobile ? <AudioCarousel /> : <AudioList />}
         <YoutubeEmbed />

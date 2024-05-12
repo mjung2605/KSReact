@@ -17,7 +17,7 @@ export const AudioDisplayTrack: React.FC<AudioDisplayTrackProps> = ( {audio, aud
 
     return <div className="p-4">
         <audio src={audio.src} ref={audioRef} onLoadedMetadata={onLoadedMetadata}></audio>
-        <p>{audio.title}</p>
+        <p className="text-center w-full">{audio.title}</p>
     </div>
     
 };
