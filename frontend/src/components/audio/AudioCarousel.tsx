@@ -1,6 +1,6 @@
 import { Carousel, IconButton } from '@material-tailwind/react';
 import { audios } from '@/assets/audio/audio';
-import { AudioPlayer } from './AudioPlayer';
+import { AudioPlayer } from '@/components';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 // Mobile Audio Component

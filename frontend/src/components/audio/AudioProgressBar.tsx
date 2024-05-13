@@ -1,7 +1,7 @@
-import "../index.css"
+import "@/index.css"
 import { useEffect, useState } from "react";
 import { AudioProgressBarProps, CustomCSSProperties } from "@/types";
-import { AudioTime } from "./AudioTime";
+import { AudioTime } from "@/components";
 
 export const AudioProgressBar: React.FC<AudioProgressBarProps> = ( {progressRef, audioRef, timeProgress, setTimeProgress, duration, setDuration} ) => {
 

@@ -1,5 +1,5 @@
 import { audios } from '@/assets/audio/audio';
-import { AudioPlayer } from './AudioPlayer';
+import { AudioPlayer } from '@/components'
 
 // Desktop Audio Component
 export const AudioList = () => {

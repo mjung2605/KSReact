@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 
 import { AudioPlayerProps } from "@/types"
-import { AudioDisplayTrack, AudioControls, AudioProgressBar } from ".."
+import { AudioDisplayTrack, AudioControls, AudioProgressBar } from "@/components"
 
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = ( {audio, isMobile} ) => {
