@@ -13,6 +13,7 @@ export interface HeadingProps {
 export interface BlurryBackgroundProps {
     title: string
     isPageTitle: boolean
+    isBlurry: boolean 
     content: ReactNode
 }
 
@@ -55,4 +56,8 @@ export type CustomCSSProperties = {
 export interface AudioTimeProps {
     time: number
     isTextAlignLeft: boolean
+}
+
+export interface CollapseContentProps {
+    isOpen: boolean
 }

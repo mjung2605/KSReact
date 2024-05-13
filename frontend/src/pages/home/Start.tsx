@@ -1,5 +1,5 @@
-import { BlurryBackground, ContactForm } from "@/components"
-import { Button, Collapse } from "@material-tailwind/react"
+import { BlurryBackground } from "@/components"
+import { CollapseContent } from "@/components/CollapseContent"
 import { useState } from "react"
 import { FaAngleDown } from "react-icons/fa6"
 
@@ -7,22 +7,25 @@ export const Start = () => {
 
 
     const [open, setOpen] = useState(false)
-    const toggleOpen = () => setOpen((current) => !current)
+    const toggleOpen = () => {
+        setOpen((current) => !current)
+        console.log("button state: " + open.valueOf.toString)
+    }
+
+   /** when collapse is opened, background has to be blurry */
 
     return <section style={{scrollSnapAlign: "start"}} className="overflow-x-hidden flex bg-start-image bg-cover">
-        <BlurryBackground title="Kathi Strikkeling" isPageTitle={true} content={<>
-        
-            <Button onClick={toggleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
-                <FaAngleDown />
-            </Button>
+        <BlurryBackground title="Kathi Strikkeling" isPageTitle={open ? false : true} content={<>
 
-            <Collapse open={open}>
-                <h1></h1>
-            </Collapse>
-        
-        
-        </>}/>
+            <div className="cursor-pointer" onClick={toggleOpen}>
+                <FaAngleDown size={48} color="white" />
+            </div>
+
+            <CollapseContent isOpen={open} />
+
+        </>} isBlurry={open}/>
         
         
     </section>
 }
+

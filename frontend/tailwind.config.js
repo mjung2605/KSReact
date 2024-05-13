@@ -19,7 +19,8 @@ export default withMT( {
       },
       padding: {
         '160': '640px',
-      }
+      },
+      
 
     },
 
