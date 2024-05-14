@@ -12,7 +12,7 @@ export const CV = () => {
                 <p>2024</p>
             </div>
 
-            <div className="text-left w-1/2 text-white">
+            <div className="text-left w-5/6 text-white">
                 <p className="w-full">Schauspielunterricht im Kreativhaus Münster</p>
                 <p className="w-full">Journalistikstudium an der TU Dortmund mit Sprechtraining</p>
                 <p className="w-full">Sprecherausbildung Mediensprechen im Sprechstilatelier Düsseldorf</p>

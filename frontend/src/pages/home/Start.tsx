@@ -9,15 +9,12 @@ export const Start = () => {
     const [open, setOpen] = useState(false)
     const toggleOpen = () => {
         setOpen((current) => !current)
-        console.log("button state: " + open.valueOf.toString)
     }
-
-   /** when collapse is opened, background has to be blurry */
 
     return <section style={{scrollSnapAlign: "start"}} className="overflow-x-hidden flex bg-start-image bg-cover">
         <BlurryBackground title="Kathi Strikkeling" isPageTitle={open ? false : true} content={<>
 
-            <div className="cursor-pointer" onClick={toggleOpen}>
+            <div className={`cursor-pointer transition-[transform] duration-500 ${open? 'rotate-180' : 'rotate-0'} `} onClick={toggleOpen}>
                 <FaAngleDown size={48} color="white" />
             </div>
 
