@@ -7,17 +7,17 @@
 @tailwind components;
 
 
-// VARIABLES
+
 :root {
     --black: #171717;
     --white: #ffffff;
     --light-gray: #d9d9d9;
 }
 
-// STYLING
+
 html, body, section {
     block-size: 100%;
-    overflow:hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,8 +30,8 @@ html {
 }
 
 p {
-  font-size: 1.25rem/* 20px */;
-  line-height: 1.75rem/* 28px */;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 
   margin-top: 1px;
   margin-bottom: 1px;
@@ -40,7 +40,7 @@ p {
   max-width: 640px;
 }
 
-// Progress Bar Slider Styling
+
 @layer utilities {
     .range-slider::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -110,4 +110,25 @@ p {
       border-top-left-radius: 2px;
       height: 2px;
     }
+
+    .datasec p {
+      @apply text-[1rem] text-left ;
+    }
+
+    .datasec h2 {
+      @apply text-lg w-4/5 max-w-160 text-center ;
+    }
+
+    .datasec h3 {
+      @apply text-lg italic w-4/5 max-w-160 text-center ;
+    }
+
+    .datasec h4 {
+      @apply text-lg underline w-4/5 max-w-160 text-center ;
+    }
+
+    .datasec ul {
+      @apply w-4/5 max-w-160;
+    }
 }
+

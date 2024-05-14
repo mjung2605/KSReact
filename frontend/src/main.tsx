@@ -17,11 +17,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: "/datenschutz",
+    path: "datenschutz",
     element: <DataSec />
   },
   {
-    path: "/impressum",
+    path: "impressum",
     element: <Impressum />
   }
 ])
