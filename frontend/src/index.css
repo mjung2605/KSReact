@@ -156,5 +156,13 @@ html {
     .datasec ul {
       @apply w-4/5 max-w-160;
     }
+
+    .datasec a {
+      @apply underline;
+    }
+
+    .impressum p {
+      @apply text-center;
+    }
 }
 
