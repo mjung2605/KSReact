@@ -7,7 +7,6 @@
 @tailwind components;
 
 
-
 :root {
     --black: #171717;
     --white: #ffffff;
@@ -17,7 +16,7 @@
 
 html, body, section {
     block-size: 100%;
-    overflow-x: hidden;
+
 }
 
 body {
@@ -29,17 +28,44 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-p {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+@media (min-width: 768px) { 
+  p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  
+    margin-top: 1px;
+    margin-bottom: 1px;
+  
+    width: 80%;
+    max-width: 640px;
+  }
 
-  margin-top: 1px;
-  margin-bottom: 1px;
-
-  width: 80%;
-  max-width: 640px;
 }
 
+@media(max-width: 767px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  
+    margin-top: 1px;
+    margin-bottom: 1px;
+    
+    width: 80%;
+    max-width: 640px;
+  }
+}
+
+
+@layer base {
+  @font-face {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.ttf') format('truetype'),
+    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff'),
+    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2') format('woff2')
+  }
+}
 
 @layer utilities {
     .range-slider::-webkit-slider-thumb {
@@ -112,19 +138,19 @@ p {
     }
 
     .datasec p {
-      @apply text-[1rem] text-left ;
+      @apply text-[1rem] text-left;
     }
 
     .datasec h2 {
-      @apply text-lg w-4/5 max-w-160 text-center ;
+      @apply text-lg w-4/5 max-w-160 text-center;
     }
 
     .datasec h3 {
-      @apply text-lg italic w-4/5 max-w-160 text-center ;
+      @apply text-lg underline w-4/5 max-w-160 text-center;
     }
 
     .datasec h4 {
-      @apply text-lg underline w-4/5 max-w-160 text-center ;
+      @apply text-[1rem] italic w-4/5 max-w-160 text-center;
     }
 
     .datasec ul {

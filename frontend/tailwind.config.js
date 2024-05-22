@@ -25,8 +25,9 @@ export default withMT( {
     },
 
     fontFamily: {
-      sans: ['Source Sans Pro', 'sans-serif'],
-      serif: ['Playfair Display', 'serif'],
+
+      serif: ['PlayfairDisplay', 'serif'],
+      
     }
     
   },
