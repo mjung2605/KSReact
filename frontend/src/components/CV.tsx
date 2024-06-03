@@ -2,7 +2,7 @@
 
 export const CV = () => {
     
-    return <div className="flex flex-row w-full justify-center ps-32 my-6">
+    return <div className="hidden md:flex flex-row w-full justify-center ps-32 my-6">
     
             <div className="text-right w-32 text-white">
                 <p>2020</p>

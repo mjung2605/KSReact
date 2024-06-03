@@ -97,6 +97,13 @@ html {
     .range-slider:active::-moz-range-thumb {
       transform: scale(1.2);
     }
+
+    .bg-anchored {
+      background-image: url('/src/assets/img/kathi_frontview_darkened.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; /* anchor */
+    }
   }
   
 @layer components {

@@ -11,7 +11,7 @@ export const Start = () => {
         setOpen((current) => !current)
     }
 
-    return <section style={{scrollSnapAlign: "start"}} className="overflow-x-hidden flex bg-start-image bg-cover">
+    return <section style={{scrollSnapAlign: "start"}} className="overflow-x-hidden flex bg-anchored">
         <BlurryBackground title="Kathi Strikkeling" isPageTitle={open ? false : true} content={<>
 
             <div className={`cursor-pointer transition-[transform] duration-500 ${open? 'rotate-180' : 'rotate-0'} `} onClick={toggleOpen}>
