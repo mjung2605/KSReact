@@ -7,13 +7,6 @@
 @tailwind components;
 
 
-:root {
-    --black: #171717;
-    --white: #ffffff;
-    --light-gray: #d9d9d9;
-}
-
-
 html, body, section {
     block-size: 100%;
 
@@ -75,7 +68,7 @@ html {
       width: 8px;
       border-radius: 50%;
       border: none;
-      background-color: var(--black);
+      background-color: #171717;
       cursor: pointer;
       position: relative;
     }
@@ -88,7 +81,7 @@ html {
       height: 8px;
       width: 8px;
       border-radius: 50%;
-      background: var(--black);
+      background: #171717;
       cursor: pointer;
       border: transparent;
       position: relative;
@@ -110,7 +103,7 @@ html {
     .range-slider {
       --range-progress: 0%;
       position: relative;
-      background: var(--light-gray);
+      background: #d9d9d9;
       width: 100%;
       height: 2px;
       border-radius: 2px;
@@ -128,7 +121,7 @@ html {
     .range-slider::before {
       content: '';
       height: 2px;
-      background: var(--black);
+      background: #171717;
       width: calc(var(--range-progress));
       border-bottom-left-radius: 2px;
       border-top-left-radius: 2px;
@@ -138,7 +131,7 @@ html {
     }
   
     .range-slider::-moz-range-progress {
-      background: var(--black);
+      background: #171717;
       border-bottom-left-radius: 2px;
       border-top-left-radius: 2px;
       height: 2px;
