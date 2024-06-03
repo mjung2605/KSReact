@@ -1,6 +1,8 @@
 # KSWeb
 
-Link zur Website: [kathistrikkeling.com](kathistrikkeling.com) (veraltet)
+Link zur Website: [kathistrikkeling.com](kathistrikkeling.com) 
+
+Letzter Build: 03.06.2024
 
 ### Was?
 Eine Webseite der junge Journalistin und Synchronsprecherin Katharina Strikkeling, die das Design und die Erstellung in meine Hände gelegt hat.
