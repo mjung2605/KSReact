@@ -18,4 +18,3 @@ Frontend mit `React` und `Tailwind` in `TypeScript`. Backend mit `Express`.
 
 ### Was kommt noch?
 - Backend ergänzen mit Kontaktformular
-- Responsiveness/mobile Seite anpassen
