@@ -10,3 +10,4 @@ export * from "./audio/AudioCarousel";
 export * from "./audio/AudioPlayer";
 export * from "./audio/AudioTime";
 export * from "./YouTubeEmbed";
+export * from "./VideoCarousel"

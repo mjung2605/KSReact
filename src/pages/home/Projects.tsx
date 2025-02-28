@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { AudioList, Heading, AudioCarousel, YoutubeEmbed } from "@/components"
+import { AudioList, Heading, AudioCarousel, VideoCarousel } from "@/components"
  
 export const Projects = () => {
 
@@ -24,6 +24,7 @@ export const Projects = () => {
         <Heading title={"Hörproben"} isTextWhite={false} isPageTitle={false} />
         
         {isMobile ? <AudioCarousel /> : <AudioList />}
-        <YoutubeEmbed />
+        <VideoCarousel />
+        
     </section>
 }

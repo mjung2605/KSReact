@@ -3,7 +3,7 @@ import { audios } from '@/assets/audio/audio';
 import { AudioPlayer } from '@/components';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
-// Mobile Audio Component
+
 export const AudioCarousel = () => {
 
     return <div className='flex flex-row h-full justify-center'>
