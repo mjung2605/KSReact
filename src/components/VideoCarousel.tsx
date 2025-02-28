@@ -47,9 +47,10 @@ export const VideoCarousel = () => {
             )}
             placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} loop={true} >
     
-                <iframe className="aspect-video w-full max-w-160 border-ksWhite border-8" src="https://www.youtube.com/embed/ZrXD5p31VDs?si=kDZo-1InkHoTWePS" title="Eingebettetes YouTube-Video"></iframe>
-                <iframe className="aspect-video w-full max-w-160 border-ksWhite border-8" src="https://www.youtube.com/embed/ZrXD5p31VDs?si=kDZo-1InkHoTWePS" title="Eingebettetes YouTube-Video"></iframe>
-    
+                <iframe className="aspect-video w-full max-w-160 border-ksWhite border-8" src="https://www.youtube.com/embed/ZrXD5p31VDs" title="Eingebettetes YouTube-Video"></iframe>
+                <iframe className="aspect-video w-full max-w-160 border-ksWhite border-8" src="https://www.youtube.com/embed/uTFiaQpTocE" title="Eingebettetes YouTube-Video"></iframe>
+                <iframe className="aspect-video w-full max-w-160 border-ksWhite border-8" src="https://www.youtube.com/embed/aX24MLiaSLc" title="Eingebettetes YouTube-Video"></iframe>
+                <iframe className="aspect-video w-full max-w-160 border-ksWhite border-8" src="https://www.youtube.com/embed/MM2Y2sHBRwg" title="Eingebettetes YouTube-Video"></iframe>
             </Carousel>
             
         </div>
